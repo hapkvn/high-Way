@@ -119,6 +119,7 @@ public class Manager : MonoBehaviour
                 btn.SetActive(true);
                 pause.SetActive(true);
                 sorce.SetActive(true);
+                AdManager.instance.HideBanner();
 
                 if (player.instance != null)
                 {
