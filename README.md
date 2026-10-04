@@ -60,5 +60,5 @@ To survive the chaos, players can trigger powerful abilities:
 
 **[HUY HOANG]** 
 *   **Role:** Game Developer (Unity / C#)
-*   **GitHub:** [@YourUsername](https://github.com/hapkvn)
+*   **GitHub:** [@hapkvn](https://github.com/hapkvn)
 *   **Contact:** [huyhoangpkvnn75@gmail.com]
