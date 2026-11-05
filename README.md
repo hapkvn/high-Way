@@ -2,8 +2,9 @@
 
 An addictive, fast-paced 2D Endless Runner where players navigate through heavy highway traffic. Dodge obstacles, survive the chaos, and utilize strategic power-ups to achieve the highest score possible. 
 
-https://github.com/user-attachments/assets/8a82db14-294b-4edb-b7a3-349148012a83
+VIDEO DEMO: https://drive.google.com/file/d/1Poi-SxcVsxlwQrwV9ng8yGGW3DOGhRgE/view?usp=drive_link
 
+file build: https://drive.google.com/file/d/1BANQAXYZfXSNH6GQfBqmth3RALJGluoR/view?usp=drive_link
 ## 📸 Gameplay Showcase
 
 <table>
