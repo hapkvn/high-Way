@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Move_button : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
@@ -10,8 +10,8 @@ public class Move_button : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         if (valueX != 0) player.instance.setMoveX(valueX);
         if (valueY != 0) player.instance.setMoveY(valueY);
-        
     }
+
     public void OnPointerUp(PointerEventData eventData)
     {
         if (valueX != 0) player.instance.setMoveX(0);

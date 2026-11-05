@@ -18,7 +18,7 @@ public class BGMManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
 
             audioSource = GetComponent<AudioSource>();
-        audioSource.mute = PlayerPrefs.GetInt("MuteBGM", 0) == 1;
+            audioSource.mute = PlayerPrefs.GetInt("MuteBGM", 0) == 1;
         }
         else
         {
