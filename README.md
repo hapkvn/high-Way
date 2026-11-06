@@ -1,65 +1,40 @@
 # 🏎️ Highway Escape: 2D Endless Traffic Rider
 
-An addictive, fast-paced 2D Endless Runner where players navigate through heavy highway traffic. Dodge obstacles, survive the chaos, and utilize strategic power-ups to achieve the highest score possible. 
+Tựa game 2D Endless Runner tốc độ cao đưa người chơi luồn lách qua các luồng giao thông đông đúc trên cao tốc. Né tránh chướng ngại vật, sinh tồn giữa hỗn loạn và tận dụng các vật phẩm hỗ trợ chiến lược để đạt điểm số cao nhất.
 
-VIDEO DEMO: https://drive.google.com/file/d/1Poi-SxcVsxlwQrwV9ng8yGGW3DOGhRgE/view?usp=drive_link
+## 🌟 Tính năng Nổi bật
 
-file build: https://drive.google.com/file/d/1BANQAXYZfXSNH6GQfBqmth3RALJGluoR/view?usp=drive_link
-## 📸 Gameplay Showcase
+*   **Cuộn 2D Vô tận (Endless 2D Scrolling):** Tạo vô tận các xe cộ và chướng ngại vật động trên đường cao tốc nhiều làn.
+*   **Tăng độ khó theo tiến trình (Difficulty Scaling):** Trò chơi tự động tăng dần tốc độ và mật độ giao thông khi điểm số của người chơi càng cao.
+*   **Cài đặt Toàn diện:** Giao diện người dùng đầy đủ chức năng để lựa chọn độ khó (Dễ, Bình thường, Khó), bật/tắt âm thanh hiệu ứng (SFX) và nhạc nền (BGM).
+*   **Tích hợp AdMob:** Tích hợp quảng cáo biểu ngữ (Banner) và quảng cáo thưởng (Rewarded Ads) của Google AdMob để nhận thêm mạng hoặc vật phẩm hỗ trợ.
 
-<table>
-  <tr>
-    <td><img width="255" height="468" alt="Screenshot 2026-10-03 235352" src="https://github.com/user-attachments/assets/ec04984e-6214-4143-8415-a8951a86a95f" /></td>
-    <td><img width="257" height="468" alt="Screenshot 2026-10-03 235402" src="https://github.com/user-attachments/assets/0b4c95bd-2640-4e42-a037-34b9f41df6e4" /></td>
-    <td><img width="253" height="464" alt="Screenshot 2026-10-03 235408" src="https://github.com/user-attachments/assets/bf0f076d-05e3-40d1-a73c-b0ef99e49d80" /></td>
-  </tr>
-  <tr>
-    <td><img width="252" height="465" alt="Screenshot 2026-10-03 235419" src="https://github.com/user-attachments/assets/764ce1aa-4b84-4bf0-9d06-a8e4d273168a" /></td>
-    <td><img width="258" height="466" alt="Screenshot 2026-10-03 235429" src="https://github.com/user-attachments/assets/2ea80e8a-79cd-431c-9854-0f24d737dee4" /></td>
-    <td><img width="257" height="465" alt="Screenshot 2026-10-03 235449" src="https://github.com/user-attachments/assets/4e98a537-ac3a-4d73-bcb6-b17e7d381e76" /></td>
-  </tr>
-  <tr>
-    <td><img width="266" height="462" alt="Screenshot 2026-10-03 235456" src="https://github.com/user-attachments/assets/3ee096c1-cc96-4bc6-a0f2-86db9e98277a" /></td>
-    <td><img width="257" height="466" alt="Screenshot 2026-10-03 235518" src="https://github.com/user-attachments/assets/acae0644-7b7d-4693-a050-2d90cd33f131" /></td>
-    <td><img width="259" height="466" alt="Screenshot 2026-10-03 235533" src="https://github.com/user-attachments/assets/56ab7be0-e266-4184-bc41-a162bf32ccb5" /></td>
-  </tr>
-</table>
+## 🚀 Vật phẩm Hỗ trợ Động (Power-Ups)
 
-## 🌟 Core Features
+Để sinh tồn trong dòng xe cộ hỗn loạn, người chơi có thể kích hoạt các kỹ năng mạnh mẽ:
 
-*   **Endless 2D Scrolling:** Infinite procedural generation of traffic cars and dynamic obstacles on a multi-lane highway.
-*   **Difficulty Scaling:** The game progressively speeds up and increases traffic density as the score gets higher.
-*   **Comprehensive Settings:** Fully functional UI for Difficulty selection (Easy, Normal, Hard), SFX, and Background Music toggles.
-*   **AdMob Integration:** Integrated Google AdMob banner ads and Rewarded Ads for extra lives or power-ups.
+1.  🔥 **Tăng tốc (Speed Up / Nitro Boost):**
+    *   Tạm thời tăng tốc độ khung hình và tốc độ cuộn của trò chơi.
+    *   Cung cấp khả năng miễn nhiễm với các va chạm nhỏ hoặc hất văng xe cộ trên đường trong một khoảng thời gian ngắn.
+2.  🛡️ **Xe tải bọc thép (Armored Truck / Shield):**
+    *   Xe của người chơi biến đổi thành một chiếc xe tải hạng nặng.
+    *   **Hệ thống độ bền (Durability System):** Xe tải hoạt động như một lớp khiên chịu được 3 lần va chạm. Nó có thể đâm vào 3 chướng ngại vật/xe cộ mà không làm kết thúc trò chơi. Sau lần va chạm thứ 3, khiên vỡ và xe trở lại dạng xe con bình thường.
 
-## 🚀 Dynamic Power-Ups
+## 🛠️ Triển khai Kỹ thuật
 
-To survive the chaos, players can trigger powerful abilities:
+*   **Object Pooling (Tái sử dụng đối tượng):** Thay vì khởi tạo và hủy liên tục (gây rò rỉ bộ nhớ và giật lag), các xe địch và phân đoạn đường được gom nhóm và tái sử dụng nhằm tối ưu hóa hiệu năng tối đa trên thiết bị di động.
+*   **Hệ thống Vật lý 2D:** Sử dụng `Rigidbody2D` và `BoxCollider2D` để phát hiện va chạm chính xác.
+*   **Singleton Managers:** Kiến trúc cấu trúc sử dụng `GameManager`, `AudioManager` và `UIManager` để xử lý mượt mà các trạng thái trò chơi (Bắt đầu, Tạm dừng, Tiếp tục, Kết thúc trò chơi).
+*   **Tính điểm theo Quãng đường:** Tính toán điểm số thời gian thực dựa trên khoảng cách trục Y thực tế mà nền di chuyển thay vì dùng bộ đếm thời gian đơn thuần.
 
-1.  🔥 **Speed Up (Nitro Boost):** 
-    *   Temporarily increases the game's timescale and scrolling speed.
-    *   Grants invulnerability to minor collisions or pushes traffic out of the way for a short duration.
-2.  🛡️ **Armored Truck (Shield):** 
-    *   The player's car physically transforms into a heavy-duty truck.
-    *   **Durability System:** The truck acts as a 3-hit shield. It can crash into 3 obstacles/cars without ending the game. Upon the 3rd collision, the shield breaks, and the vehicle reverts back to the standard fragile car.
+## 🎮 Cách điều khiển
 
-## 🛠️ Technical Implementation
+*   **Nút bấm Điều hướng UI:** Chạm và giữ các nút điều hướng trên màn hình (Lên, Xuống, Trái, Phải) được quản lý thông qua các giao diện `IPointerDownHandler` và `IPointerUpHandler` để điều khiển di động chuẩn xác.
+*   **Nút Kỹ năng:** Chạm vào các nút UI trên màn hình để kích hoạt tức thì *Khiên* hoặc *Tăng tốc*.
 
-*   **Object Pooling:** Instead of instantiating and destroying objects (which causes memory leaks and lag), enemy cars and road segments are pooled and recycled for maximum mobile performance.
-*   **2D Physics Engine:** Utilizes `Rigidbody2D` and `BoxCollider2D` for precise collision detection.
-*   **Singleton Managers:** Structured architecture using `GameManager`, `AudioManager`, and `UIManager` to flawlessly handle game states (Start, Pause, Resume, Game Over).
-*   **Distance-Based Scoring:** Real-time score calculation based on the actual Y-axis distance traveled by the background rather than simple timers.
-
-## 🎮 Controls
-
-*   **Touch/Drag:** Drag left or right on the screen to steer the vehicle across lanes.
-*   **UI Buttons:** Tap on-screen buttons to activate the *Shield* or *Speed Up* power-ups.
-
-
-
-## 👨‍💻 Developer
+## 👨‍💻 Nhà phát triển
 
 **[HUY HOANG]** 
-*   **Role:** Game Developer (Unity / C#)
+*   **Vai trò:** Game Developer (Unity / C#)
 *   **GitHub:** [@hapkvn](https://github.com/hapkvn)
-*   **Contact:** [huyhoangpkvnn75@gmail.com]
+*   **Liên hệ:** [huyhoangpkvnn75@gmail.com]
